@@ -6,3 +6,11 @@ const menuHamburguer = new MenuHamburguer(
     ".item"
 );
 menuHamburguer.init()
+
+
+
+var swiper = new Swiper(".mySwiper", {
+    pagination: {
+        el: ".swiper-pagination",
+    },
+});

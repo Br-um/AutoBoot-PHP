@@ -11,7 +11,10 @@ body{
     height: 100vh;
     width: 100vw;
     scroll-behavior: smooth;
-    background: #1f1f1f;
+    background: #141414;
+}
+.icon{
+  margin-right: 5px;
 }
 header{
     display: flex;
@@ -32,11 +35,12 @@ nav h3{
 }
 
 #menuHamburguer{
-    width: 42px;
+    width: 40px;
     height: 25px;
     margin: 30px;
     display: none;
 }
+
 .list{
     display: flex;
     flex-direction: row;
@@ -157,6 +161,37 @@ header img{
     width: 17px;
     margin-top: 3px;
   }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
 
 /*Responsive*/
@@ -189,7 +224,17 @@ header img{
     #menuHamburguer.act span{
         background: #fff;
     }
+    #menuHamburguer.act .line1{
+      transform: rotate(-45deg);
+    }
+    #menuHamburguer.act .line2{
+      transform: rotate(45deg); 
+    }
+    #menuHamburguer.act .line3{
+      opacity: 0;
+    }
     #menuHamburguer span{
+      transition: 0.3s;
         height: 3px;
         border-radius: 7px;
         background: #000;
