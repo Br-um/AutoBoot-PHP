@@ -1,15 +1,16 @@
 body, html, li ,ul, a{
     list-style: none;
     text-decoration: none;
-    color: white;
     margin: 0;
+    color: white;
     position: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-repeat: no-repeat;
 }
 body{
     position: absolute;
     height: 100vh;
-    width: 100vw;
+    width: 98.81vw;
     scroll-behavior: smooth;
     background: #141414;
 }
@@ -21,6 +22,7 @@ header{
     background: crimson;
     width: 100%;
     height: 500px;
+    z-index: 1;
 }
 nav{
     display: flex;
@@ -28,6 +30,10 @@ nav{
     flex-direction: row;
     width: 100vw;
     justify-content: space-between;
+    z-index: 10;
+}
+#navbar::after{
+ 
 }
 nav h3{
     margin-left: 50px;
@@ -72,6 +78,7 @@ header img{
     height: 250px;
     margin: auto;
     margin-top: 350px;
+    z-index: 2;
 }
 
 
