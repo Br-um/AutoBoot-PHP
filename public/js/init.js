@@ -1,12 +1,13 @@
 console.log(window.innerWidth);
-console.log(window.scroll);
-const menuHamburguer = new MenuHamburguer("menuHamburguer", ".list", ".item");
-menuHamburguer.init();
 
-const navScroll = new NavScroll(
-    "nav"
-)
-navScroll.init();
+const nav = document.getElementsByTagName("nav")[0];
+window.onscroll = () => {
+  if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+    nav.style.background = "rgba(0,0,0,0.6)";
+  }else{
+    nav.style.background = "rgba(0,0,0,0)"
+  }
+}
 
 var swiper = new Swiper(".mySwiper", {
   pagination: {

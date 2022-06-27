@@ -31,6 +31,7 @@ nav{
     width: 100vw;
     justify-content: space-between;
     z-index: 10;
+    transition: 0.3s;
 }
 #navbar::after{
  
