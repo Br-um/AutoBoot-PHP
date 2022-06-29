@@ -33,9 +33,6 @@ nav{
     z-index: 10;
     transition: 0.3s;
 }
-#navbar::after{
- 
-}
 nav h3{
     margin-left: 50px;
     font-size: 30px;
@@ -173,17 +170,15 @@ header img{
   }
   .swiper {
     width: 100%;
-    height: 100%;
+    height: 117%;
   }
   .swiper .carFocus{
-    position: absolute;
+    position: relative;
     z-index: 4;
     width: 100%;
     height: 100px;
     top: 0;
     background: #141414;
-    border-bottom-left-radius: 500px;
-    border-bottom-right-radius: 500px;
   }
   .swiper-slide {
     text-align: center;
@@ -212,88 +207,31 @@ header img{
     object-fit: cover;
   }
 
-
-  .product .product-card{
-    z-index: 1;
-    background: #1D212B;
+  
+  .container{
     position: relative;
-    width: 300px;
-    height: 400px;
-    margin: 40px;
-    border-radius: 10px;
-  }
-  
-  .product .product-card:before{
-    content: '';
-    background: rgba(255, 255, 255, 0.1);
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-  }
-  
-  .product .product-card .product-img{
-    z-index: 1;
     width: 100%;
     height: auto;
-    position: absolute;
-    align-items: center;
-    max-width: 250px;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-gap: 2vw;
+  }
+
+  .carCard{
+    top: 20px;
+    position: relative;
+    display: grid;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    border-radius: 30px;
   }
   
-  .product .product-card .name{
-    z-index: 2;
-    color: #fff;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    bottom: 130px;
-    font-size: 20px;
-    letter-spacing: 1px;
-    color: darkcyan;
-  }
-  
-  .product .product-card .price{
-    z-index: 2;
-    color: #fff;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    bottom: 80px;
-    font-size: 30px;
-    font-weight: 300;
-    color: darkcyan;
-    text-decoration: bold;
-  }
-  
-  .product .product-card .popup-btn{
-    z-index: 2;
-    color: crimson;
-    background: #555;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 14px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 1px;
-    padding: 10px 15px;
-    border-radius: 20px;
-    cursor: pointer;
-  }
   
   /*Styles for popup view*/
   
-  .product .popup-view{
+  .popup-view{
     z-index: 2;
     background: rgba(255, 255, 255, 0.5);
     position: fixed;
@@ -309,12 +247,12 @@ header img{
     transition: 0.5s;
   }
   
-  .product .popup-view.active{
+  .popup-view.active{
     opacity: 1;
     visibility: visible;
   }
   
-  .product .popup-card{
+  .popup-card{
     position: relative;
     display: flex;
     width: 800px;
@@ -322,7 +260,7 @@ header img{
     margin: 20px;
   }
   
-  .product .popup-card .product-img{
+  .popup-card .product-img{
     z-index: 2;
     background: #1D212B;
     position: relative;
@@ -336,14 +274,14 @@ header img{
     border-bottom-left-radius: 10px;
   }
   
-  .product .popup-card .product-img img{
+  .popup-card .product-img img{
     z-index: 2;
     position: relative;
     width: 450px;
     left: -50px;
   }
   
-  .product .popup-card .info{
+  .popup-card .info{
     z-index: 2;
     background: #fff;
     display: flex;
@@ -356,7 +294,7 @@ header img{
     color: crimson;
   }
   
-  .product .popup-card .close-btn{
+  .popup-card .close-btn{
     color: #555;
     z-index: 3;
     position: absolute;
@@ -366,30 +304,30 @@ header img{
     cursor: pointer;
   }
   
-  .product .popup-card .info h2{
+  .popup-card .info h2{
     font-size: 40px;
     line-height: 20px;
     margin: 10px;
   }
   
-  .product .popup-card .info h2 span{
+  .popup-card .info h2 span{
     font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 2px;
   }
   
-  .product .popup-card .info p{
+  .popup-card .info p{
     font-size: 15px;
     margin: 10px;
   }
   
-  .product .popup-card .info .price{
+  .popup-card .info .price{
     font-size: 45px;
     font-weight: 300;
     margin: 10px;
   }
   
-  .product .popup-card .info .add-cart-btn{
+  .popup-card .info .add-cart-btn{
     color: #fff;
     background: black;
     font-size: 16px;
@@ -402,7 +340,7 @@ header img{
     border-radius: 20px;
   }
   
-  .product .popup-card .info .add-wish{
+  .popup-card .info .add-wish{
     color: black;
     font-size: 16px;
     text-align: center;
@@ -415,6 +353,7 @@ header img{
 .cta {
   border: none;
   background: none;
+  position: relative;
  }
  
  .cta span {
@@ -440,7 +379,7 @@ header img{
  
  .hover-underline-animation {
   position: relative;
-  color: black;
+  color: #000;
   padding-bottom: 20px;
  }
  
@@ -452,11 +391,10 @@ header img{
   height: 1.5px;
   bottom: 0;
   left: 0;
-  background-color: #000000;
+  background-color: #000;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
  }
- 
  .cta:hover .hover-underline-animation:after {
   transform: scaleX(1);
   transform-origin: bottom left;

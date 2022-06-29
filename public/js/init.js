@@ -14,6 +14,19 @@ console.log("init on");
 console.log(window.screenY);
 
 
+console.log(window.innerWidth);
+
+const navScroller = new NavScroller(
+  "nav"
+)
+navScroller.init();
+
+
+const menuHamburguer = new MenuHamburguer(
+  "menuHamburguer",
+  ".list"
+)
+menuHamburguer.init()
 
 var popupViews = document.querySelectorAll('.popup-view');
 var popupBtns = document.querySelectorAll('.popup-btn');

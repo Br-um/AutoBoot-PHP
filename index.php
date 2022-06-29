@@ -61,88 +61,44 @@
         </div>
         <div class="swiper-pagination"></div>
     </div>
+    <section class="container">
+        <div class="carCard">
+            <div></div>
+        </div>
+        <div class="carCard">
 
-    <div class="container">
-        <div class="product">
-            <div class="product-card">
-                <h2 class="name">Gasolina Comum</h2>
-                <span class="price">6,00 R$</span>
-                <a class="popup-btn">Comprar</a>
-                <img src="images/bomba3.png" class="product-img" alt="">
-            </div>
-            <div class="popup-view">
-                <div class="popup-card">
-                    <a><i class="fas fa-times close-btn"></i></a>
-                    <div class="product-img">
-                        <img src="images/bomba3.png" alt="">
-                    </div>
-                    <div class="info">
-                        <h2>Gasolina<br><span>Comum</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <span class="price">$120.00</span>
-                        <a href="#" class="add-cart-btn">Add ao carrinho</a>
-                        <a href="#" class="add-wish">Add a lista de desejo</a>
-                    </div>
-                </div>
-            </div>
         </div>
-        <div class="product">
-            <div class="product-card">
-                <h2 class="name">Gasolina Aditivada</h2>
-                <span class="price">6,50 R$</span>
-                <button class="cta">
-                    <span class="hover-underline-animation"> Shop now </span>
-                    <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                        <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                    </svg>
-                </button>
-                <img src="images/bomba3.png" class="product-img" alt="">
-            </div>
-            <div class="popup-view">
-                <div class="popup-card">
-                    <a><i class="fas fa-times close-btn"></i></a>
-                    <div class="product-img">
-                        <img src="images/bomba3.png" alt="">
-                    </div>
-                    <div class="info">
-                        <h2>Gasolina<br><span>Aditivada</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <span class="price">$100.00</span>
-                        <a href="#" class="add-cart-btn">Add ao carrinho</a>
-                        <a href="#" class="add-wish">Add a lista de desejo</a>
-                    </div>
-                </div>
-            </div>
+        <div class="carCard">
+
         </div>
-        <div class="product">
-            <div class="product-card">
-                <h2 class="name">óleo</h2>
-                <span class="price">20 R$</span>
-                <button class="cta">
-                    <span class="hover-underline-animation"> Shop now </span>
-                    <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                        <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                    </svg>
-                </button>
-                <img src="images/oleo.png" class="product-img" alt="">
-            </div>
-            <div class="popup-view">
-                <div class="popup-card">
-                    <a><i class="fas fa-times close-btn"></i></a>
-                    <div class="product-img">
-                        <img src="images/oleo.png" alt="">
-                    </div>
-                    <div class="info">
-                        <h2>Óleo<br><span>Para Carro</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <span class="price">$250.00</span>
-                        <a href="#" class="add-cart-btn">Add ao carrinho</a>
-                        <a href="#" class="add-wish">Add a lista de desejo</a>
-                    </div>
-                </div>
-            </div>
+        <div class="carCard">
+
         </div>
-    </div>
+        <div class="carCard">
+
+        </div>
+        <div class="carCard">
+
+        </div>
+        <div class="carCard">
+
+        </div>
+        <div class="carCard">
+
+        </div>
+        <div class="carCard">
+
+        </div>
+        <div class="carCard">
+
+        </div>
+        <div class="carCard">
+
+        </div>
+        <div class="carCard">
+
+        </div>
+    </section>
     </section>
 
 
@@ -151,3 +107,22 @@
 </body>
 
 </html>
+
+
+
+
+<div class="popup-view">
+    <div class="popup-card">
+        <a><i class="fas fa-times close-btn"></i></a>
+        <div class="product-img">
+            <img src="images/oleo.png" alt="">
+        </div>
+        <div class="info">
+            <h2>Óleo<br><span>Para Carro</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <span class="price">$250.00</span>
+            <a href="#" class="add-cart-btn">Add ao carrinho</a>
+            <a href="#" class="add-wish">Add a lista de desejo</a>
+        </div>
+    </div>
+</div>

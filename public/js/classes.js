@@ -4,10 +4,11 @@ class NavScroller{
         this.nav = document.getElementsByTagName(nav)[0];
     }
     scrollEvent(){
-        if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
-            this.nav.style.background = "rgba(0,0,0,0.6)"
+        if(document.body.scrollTop > 500 || document.documentElement.scrollTop > 500){
+            this.nav.style.top = "-200vh"
+            this.nav.style.transition = "0.8s"
         }else{
-            this.nav.style.background = "rgba(0,0,0,0)"
+            this.nav.style.top = "0"
           }
     }
     onscroll(){
@@ -29,7 +30,7 @@ class MenuHamburguer{
         this.act = "act"
         }
 
-        handleClick(){
+        handleClick = () => {
             this.list.classList.toggle(this.act)
             this.menu.classList.toggle(this.act)
         }
