@@ -14,9 +14,8 @@
 </head>
 
 <body>
-
     <header>
-        <nav>
+        <nav class="nav-principal">
             <h3>
                 Logo
             </h3>
@@ -46,21 +45,59 @@
                 </li>
             </ul>
         </nav>
+        <h2>AutoBoot</h2>
         <img src="public/img/ferrari.png" alt="" srcset="">
     </header>
     <!-- Swiper -->
-    <div class="swiper mySwiper">
-        <div class="carFocus"></div>
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="public/img/cr1.jpg" alt="" srcset=""></div>
-            <div class="swiper-slide"><img src="public/img/cr2.jpg" alt="" srcset=""></div>
-            <div class="swiper-slide"><img src="public/img/cr3.jpg" alt="" srcset=""></div>
-            <div class="swiper-slide"><img src="public/img/cr4.jpg" alt="" srcset=""></div>
-            <div class="swiper-slide"><img src="public/img/cr5.jpg" alt="" srcset=""></div>
-            <div class="swiper-slide"><img src="public/img/cr6.jpg" alt="" srcset=""></div>
+    <section class="home">
+        <div class="media-icons">
+            <a href="#"><i class="uil uil-facebook-f"></i></a>
+            <a href="#"><i class="uil uil-instagram"></i></a>
+            <a href="#"><i class="uil uil-twitter"></i></a>
         </div>
-        <div class="swiper-pagination"></div>
-    </div>
+        <div class="swiper bg-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="public/img/cr1.jpg" alt="">
+                    <div class="text-content">
+                        <h2 class="title">AutoBoot</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide dark-layer">
+                    <img src="public/img/cr2.jpg" alt="">
+                    <div class="text-content">
+                        <h2 class="title">Como Surgiu?</h2>
+                        <p>Surgiu com intuito de facilitar a compra de carros esportivos sem muita demanda presencial.</p>
+                        <button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="swiper-slide dark-layer">
+                    <img src="public/img/cr3.jpg" alt="">
+                    <div class="text-content">
+                        <h2 class="title">Que itens pode comprar aqui?</h2>
+                        <p>Aqui você pode comprar qualquer produto que tenha nos postos desde a gasolina a lubrificante para o carro.</p>
+                        <button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="public/img/cr4.jpg" alt="">
+                    <div class="text-content">
+                        <h2 class="title">Quem Somos?</h2>
+                        <p>Nós surgiu com o propósito de ajudar a comunidade usando tecnologia, nosso site tem em mente em resolver o problema na demora para o abastecimento de carro, caminhão, moto, etc... e também ajuda a achar o posto com o melhor custo beneficio perto de sua casa.</p>
+                        <button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-slider-thumbs">
+            <div class="swiper-wrapper thumbs-container">
+                <img src="public/img/cr1.jpg" class="swiper-slide" alt="">
+                <img src="public/img/cr2.jpg" class="swiper-slide" alt="">
+                <img src="public/img/cr3.jpg" class="swiper-slide" alt="">
+                <img src="public/img/cr4.jpg" class="swiper-slide" alt="">
+            </div>
+        </div>
+    </section>
     <section class="container">
         <div class="carCard">
             <div></div>
@@ -100,29 +137,9 @@
         </div>
     </section>
     </section>
-
-
     <script src="public/js/classes.js"></script>
     <script src="public/js/init.js"></script>
 </body>
 
 </html>
 
-
-
-
-<div class="popup-view">
-    <div class="popup-card">
-        <a><i class="fas fa-times close-btn"></i></a>
-        <div class="product-img">
-            <img src="images/oleo.png" alt="">
-        </div>
-        <div class="info">
-            <h2>Óleo<br><span>Para Carro</span></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <span class="price">$250.00</span>
-            <a href="#" class="add-cart-btn">Add ao carrinho</a>
-            <a href="#" class="add-wish">Add a lista de desejo</a>
-        </div>
-    </div>
-</div>

@@ -1,6 +1,5 @@
 class NavScroller{
     constructor(nav){
-
         this.nav = document.getElementsByTagName(nav)[0];
     }
     scrollEvent(){
@@ -24,24 +23,25 @@ class NavScroller{
 class MenuHamburguer{
     constructor(menu, list){
         this.menu = document.getElementById(menu)
-        this.list = document.getElementsByClassName(list)[0]
+        this.list = document.querySelector(list)
         this.handleClick = this.handleClick.bind(this)
 
         this.act = "act"
         }
 
-        handleClick = () => {
+        handleClick() {
             this.list.classList.toggle(this.act)
             this.menu.classList.toggle(this.act)
         }
         clickEvent(){
-            this.menu.addEventListener("click", this.handleClick())
+            this.menu.addEventListener("click", this.handleClick)
         }
         init(){
             if(this.menu){
-                this.clickEvent()
+                this.clickEvent
             }
             return this
         }
 }
+console.log("class init")
 

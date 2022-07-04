@@ -1,14 +1,19 @@
 console.log(window.innerWidth);
 
 
-var swiper = new Swiper(".mySwiper", {
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  autoplay: {
-    delay: 5000
-  }
+var swiper = new Swiper(".bg-slider-thumbs", {
+  loop: true,
+  spaceBetween: 0,
+  slidesPerView: 0,
 });
+var swiper2 = new Swiper(".bg-slider", {
+  loop: true,
+  spaceBetween: 0,
+  thumbs: {
+      swiper: swiper,
+  },
+});
+
 
 console.log("init on");
 console.log(window.screenY);
