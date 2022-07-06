@@ -22,8 +22,8 @@ class NavScroller{
 
 class MenuHamburguer{
     constructor(menu, list){
-        this.menu = document.getElementById(menu)
-        this.list = document.querySelector(list)
+        this.menu = document.querySelectorAll(menu)[0]
+        this.list = document.querySelectorAll(list)[0]
         this.handleClick = this.handleClick.bind(this)
 
         this.act = "act"
@@ -38,10 +38,9 @@ class MenuHamburguer{
         }
         init(){
             if(this.menu){
-                this.clickEvent
+                this.clickEvent()
             }
             return this
         }
 }
 console.log("class init")
-

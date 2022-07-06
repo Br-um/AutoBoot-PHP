@@ -1,10 +1,16 @@
 console.log(window.innerWidth);
+console.log("init on");
+console.log(window.screenY);
 
 
+// Swiper init
 var swiper = new Swiper(".bg-slider-thumbs", {
   loop: true,
   spaceBetween: 0,
   slidesPerView: 0,
+  autoplay: {
+    delay: 6000
+  }
 });
 var swiper2 = new Swiper(".bg-slider", {
   loop: true,
@@ -12,14 +18,16 @@ var swiper2 = new Swiper(".bg-slider", {
   thumbs: {
       swiper: swiper,
   },
+  autoplay: {
+    delay: 6000
+  }
 });
 
 
-console.log("init on");
-console.log(window.screenY);
 
 
-console.log(window.innerWidth);
+
+
 
 const navScroller = new NavScroller(
   "nav"
@@ -28,7 +36,7 @@ navScroller.init();
 
 
 const menuHamburguer = new MenuHamburguer(
-  "menuHamburguer",
+  ".menuHamburguer",
   ".list"
 )
 menuHamburguer.init()

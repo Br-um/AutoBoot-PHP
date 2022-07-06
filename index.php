@@ -19,13 +19,13 @@
             <h3>
                 Logo
             </h3>
-            <div id="menuHamburguer">
+            <div class="menuHamburguer">
                 <span class="line1 item"></span>
                 <span class="line2 item"></span>
                 <span class="line3 item"></span>
             </div>
             <ul class="list">
-                <li><a href="/trabalho"><i class="fa-solid fa-house icon"></i>Home</li></a>
+                <li><a href="./index.php"><i class="fa-solid fa-house icon"></i>Home</li></a>
                 <li><a href="http://"><i class="fa-solid fa-car icon"></i>Estoque</li></a>
                 <li><a href="http://"><i class="fa-solid fa-people-group icon"></i>Nós</li></a>
                 <li>
@@ -50,11 +50,6 @@
     </header>
     <!-- Swiper -->
     <section class="home">
-        <div class="media-icons">
-            <a href="#"><i class="uil uil-facebook-f"></i></a>
-            <a href="#"><i class="uil uil-instagram"></i></a>
-            <a href="#"><i class="uil uil-twitter"></i></a>
-        </div>
         <div class="swiper bg-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -75,15 +70,15 @@
                     <img src="public/img/cr3.jpg" alt="">
                     <div class="text-content">
                         <h2 class="title">Que itens pode comprar aqui?</h2>
-                        <p>Aqui você pode comprar qualquer produto que tenha nos postos desde a gasolina a lubrificante para o carro.</p>
+                        <p>Aqui você poderá comprar os mais cobiçados veículos automotores espotivos para tunar a sua garagem.</p>
                         <button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="public/img/cr4.jpg" alt="">
+                    <img src="public/img/cr6.jpg" alt="">
                     <div class="text-content">
                         <h2 class="title">Quem Somos?</h2>
-                        <p>Nós surgiu com o propósito de ajudar a comunidade usando tecnologia, nosso site tem em mente em resolver o problema na demora para o abastecimento de carro, caminhão, moto, etc... e também ajuda a achar o posto com o melhor custo beneficio perto de sua casa.</p>
+                        <p>Somos uma empresa especializada em vendas de carros esportivos e agora estamos estabelecidos no mercado virtual.</p>
                         <button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button>
                     </div>
                 </div>
@@ -94,7 +89,7 @@
                 <img src="public/img/cr1.jpg" class="swiper-slide" alt="">
                 <img src="public/img/cr2.jpg" class="swiper-slide" alt="">
                 <img src="public/img/cr3.jpg" class="swiper-slide" alt="">
-                <img src="public/img/cr4.jpg" class="swiper-slide" alt="">
+                <img src="public/img/cr6.jpg" class="swiper-slide" alt="">
             </div>
         </div>
     </section>

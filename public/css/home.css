@@ -40,7 +40,7 @@ body{
 header{
     display: flex;
     background: crimson;
-    width: 100%;
+    width: 100vw;
     height: 500px;
     z-index: 1;
 }
@@ -48,7 +48,9 @@ nav{
     display: flex;
     position: fixed;
     flex-direction: row;
-    width: 100vw;
+    width: 95vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
     justify-content: space-between;
     z-index: 10;
     transition: 0.3s;
@@ -61,12 +63,10 @@ header h2{
   font-family: fontFerrari;
   font-style: italic;
   font-size: 280px;
-  left: 50px;
-  bottom: -70px;
   position: absolute;
   text-shadow: 0px -4px 1px#000;
 }
-#menuHamburguer{
+.menuHamburguer{
     width: 40px;
     height: 25px;
     margin: 30px;
@@ -248,6 +248,7 @@ header img{
     font-weight: 700;
     text-shadow: var(--text-shadow);
     margin-bottom: 20px;
+    font-family: fontFerrari;
     transform: translateY(-50px);
     opacity: 0;
     color: #fff;
@@ -262,7 +263,7 @@ header img{
   }
   
   .swiper-slide .text-content .title span{
-    font-size: 0.3em;
+    font-size: 0.4em;
     font-weight: 300;
   }
   
@@ -271,14 +272,15 @@ header img{
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     text-shadow: var(--text-shadow);
-    padding: 20px;
+    padding: 100px;
     border-radius: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     border-right: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: var(--box-shadow);
     transform: translateX(-80px);
     opacity: 0;
-    color: black;
+    font-size: 1.4em;
+    color: #fff;
   }
   
   .swiper-slide-active .text-content p{
@@ -364,22 +366,6 @@ header img{
     border: 1px solid var(--white-color);
   }
   
-  /*======= Media icons =======*/
-  .media-icons{
-    z-index: 999;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 90px;
-  }
-  
-  .media-icons a{
-    color: var(--white-color);
-    font-size: 1.7em;
-    margin: 10px 0;
-  }
   
   /*======= About section =======*/
   .about h2{
@@ -607,27 +593,27 @@ header img{
     .list.act{
         right: 0;
     }
-    #menuHamburguer{
+    .menuHamburguer{
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         cursor: pointer;
         transition: 0.3s;
-        z-index: 3;
+        z-index: 999;
     }
-    #menuHamburguer.act span{
+    .menuHamburguer.act span{
         background: #fff;
     }
-    #menuHamburguer.act .line1{
-      transform: rotate(-45deg);
+    .menuHamburguer.act .line1{
+      transform: rotate(-45deg) translate(-7px, 6px);
     }
-    #menuHamburguer.act .line2{
-      transform: rotate(45deg); 
-    }
-    #menuHamburguer.act .line3{
+    .menuHamburguer.act .line2{
       opacity: 0;
     }
-    #menuHamburguer span{
+    .menuHamburguer.act .line3{
+      transform: rotate(45deg) translate(-9px, -9px); 
+    }
+    .menuHamburguer span{
       transition: 0.3s;
         height: 3px;
         border-radius: 7px;
