@@ -69,7 +69,7 @@
                 <div class="swiper-slide dark-layer">
                     <img src="public/img/cr3.jpg" alt="">
                     <div class="text-content">
-                        <h2 class="title">Que itens pode comprar aqui?</h2>
+                        <h2 class="title">Quais veículos podem ser comprados aqui?</h2>
                         <p>Aqui você poderá comprar os mais cobiçados veículos automotores espotivos para tunar a sua garagem.</p>
                         <button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button>
                     </div>
