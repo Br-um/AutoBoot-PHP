@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/indentation.css">
     <link rel="stylesheet" href="public/css/home.css">
     <script src="https://kit.fontawesome.com/57a78e002b.js" crossorigin="anonymous"></script>
     <!-- Swiper JS -->
@@ -130,7 +131,6 @@
         <div class="carCard">
 
         </div>
-    </section>
     </section>
     <script src="public/js/classes.js"></script>
     <script src="public/js/init.js"></script>

@@ -1,0 +1,7 @@
+.regBar {
+    right: 0;
+    position: absolute;
+    width: 500px;
+    height: 100%;
+    border-left: 1px solid #9b9b9b;
+}    

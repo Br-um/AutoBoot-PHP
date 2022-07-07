@@ -1,0 +1,28 @@
+@font-face {
+    font-family: fontFerrari;
+    src: url('../fonts/FerroRosso.ttf');
+  }
+  
+  :root{
+    --white-color: #fff;
+    --dark-color: #222;
+    --body-bg-color: #fff;
+    --navigation-item-hover-color: #3b5378;
+  
+    --text-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    --box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+  
+    --scroll-bar-color: #fff;
+    --scroll-thumb-color: #282f4e;
+    --scroll-thumb-hover-color: #454f6b;
+  }
+  
+  body, html, li ,ul, a{
+      list-style: none;
+      text-decoration: none;
+      margin: 0;
+      color: white;
+      position: 0;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-repeat: no-repeat;
+  }
