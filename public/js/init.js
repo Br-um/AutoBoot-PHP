@@ -64,3 +64,11 @@ closeBtns.forEach((closeBtn) => {
     });
   });
 });
+
+
+const titleAutoBoot = document.querySelectorAll(".titleAutoBoot")[0]
+titleAutoBoot.style.marginLeft = "0";
+titleAutoBoot.style.opacity = "1";
+
+const navSmooth = document.querySelectorAll(".nav-principal")[0]
+navSmooth.style.opacity = "1";

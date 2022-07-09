@@ -3,7 +3,7 @@ class NavScroller{
         this.nav = document.getElementsByTagName(nav)[0];
     }
     scrollEvent(){
-        if(document.body.scrollTop > 500 || document.documentElement.scrollTop > 500){
+        if(document.body.scrollTop > 500 && window.innerWidth < 830){
             this.nav.style.top = "-200vh"
             this.nav.style.transition = "0.8s"
         }else{
