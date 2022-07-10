@@ -1,5 +1,5 @@
 <?php
-    include('../models/users.php');
+    include('../models/User-Class.php');
 
     $users = new Users;
     $users->setName($_POST['name']);

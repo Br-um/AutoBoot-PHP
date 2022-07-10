@@ -14,7 +14,8 @@
     <div class="regBar">
         <section>
             <form class="form" action="../controller/user-controller.php" method="POST">
-                <fieldset>
+            <h3>REGISTRE-SE</h3>    
+            <fieldset>
                     <input type="text" name="name" placeholder="Digite seu nome: ">
                 </fieldset>
                 <fieldset>
@@ -26,7 +27,9 @@
                 <fieldset>
                     <input type="tel" name="phone" placeholder="Digite seu número de celular: ">
                 </fieldset>
+                <fieldset>
                 <button type="submit">Cadastrar</button>
+                </fieldset>
             </form>
         </section>
     </div>

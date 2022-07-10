@@ -4,4 +4,40 @@
     width: 500px;
     height: 100%;
     border-left: 1px solid #9b9b9b;
-}    
+}
+h3{
+    color: #fff;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    background: crimson;
+}
+h3{
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 150px;
+    height: auto;
+}
+input{
+    width: 250px;
+    height: 30px;
+
+}
+fieldset{
+    border: 0;
+    display: flex;
+    justify-content: center;
+}

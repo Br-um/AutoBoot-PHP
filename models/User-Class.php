@@ -66,13 +66,17 @@ class Users{
     public function valitationFields(){
         $patternName = "/^[a-z0-9]+$/i";
         $patternEmail = "/^[a-z0-9\_\-]+@[a-z0-9]+.(com|br|com.br)$/i";
-        $patternPassword = "/^[a-z0-9\@\!\#\%\¨\&\*\(\)]{8-25}$/i";
-        $patternPhone = "/^[0-9]{7-13}$/";
+        $patternPassword = "/^[a-z0-9]{5,35}$/i";
+        $patternPhone = "/^[0-9]{5,25}$/";
 
         if(preg_match($patternName, $this->name) && preg_match($patternEmail, $this->email) && preg_match($patternPassword, $this->password) && preg_match($patternPhone, $this->phone)):
             echo "Validos";
         else:
-            echo "Inválidos";
+            echo "Inválidos<br><br>
+            Nome: {$this->name}<br>
+            Email: {$this->email}<br>
+            Senha: {$this->password}<br>
+            Telefone: {$this->phone}";
         endif;
         }
 }

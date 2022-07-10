@@ -34,9 +34,17 @@ nav {
   transition: 2s;
 }
 
-nav h3 {
-  margin-left: 50px;
-  font-size: 30px;
+header img {
+  width: 70px;
+  margin-top: 10px;
+  height: 60px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 5px;
+}
+header img:hover {
+  background: #fd3737;
+  cursor: pointer;
 }
 
 header h2 {
@@ -58,7 +66,7 @@ header h2 {
   font-size: clamp(1em, 1.30em + 15vw, 16em);
   margin-bottom: 1vh;
   position: absolute;
-  text-shadow: 1px 1px 80px #000;
+  text-shadow: 1px 2px 2px #000;
 }
 
 .menuHamburguer {
@@ -99,19 +107,69 @@ li:hover {
   border-radius: 50px;
 }
 
-header img {
-  width: 650px;
-  height: 250px;
-  margin: auto;
-  margin-top: 52vh;
-  z-index: 2;
-  transition: 0.5s;
+
+.registerSection{
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+
+}
+.twoCarImage{
+  background-image: url('../img/cr5.jpg');
+  background-size: cover;
+  border-radius: 30px;
+  margin-top: 50px;
+  margin-bottom: -100px;
+  margin-left: 2vw;
+  opacity: 0;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  width: 450px;
+  height: 450px;
 }
 
-
-
-
-
+.cardsTwo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+  grid-template-columns: 1fr 1fr;
+}
+.cardSecTwo{
+  width: 350px;
+  height: 230px;
+  margin: 10px;
+  opacity: 0;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: -100px;
+  transition: 0.8s;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card1:hover{
+  background: rgba(64, 0, 255, 0.8);
+  cursor: pointer;
+}
+.card2:hover{
+  background: rgba(242, 255, 0, 0.8);
+  cursor: pointer;
+}
+.card3:hover{
+  background: rgba(26, 255, 0, 0.8);
+  cursor: pointer;
+}
+.card4:hover{
+  background: rgba(255, 0, 0, 0.8);
+  cursor: pointer;
+}
 
 /* From uiverse.io by @satyamchaudharydev */
 /* From uiverse.io by @satyamchaudharydev */
@@ -203,13 +261,12 @@ input:not(:placeholder-shown)~.reset {
   margin-top: 3px;
 }
 
-/*======= Home =======*/
-.home {
+.sliderCar {
   width: 100vw;
   height: 100vh;
 }
 
-.home:before {
+.sliderCar:before {
   z-index: 555;
   content: '';
   position: absolute;
@@ -346,7 +403,7 @@ input:not(:placeholder-shown)~.reset {
 .bg-slider-thumbs {
   z-index: 9;
   position: absolute;
-  bottom: -100vh;
+  margin-top: -10vh;
   left: 50%;
   transform: translateX(-50%);
   transition: 0.3s ease;
@@ -390,141 +447,21 @@ input:not(:placeholder-shown)~.reset {
   position: relative;
   width: 100%;
   height: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  grid-gap: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .carCard {
   position: relative;
   display: grid;
   width: 300px;
-  margin: 100px 0 0 60px;
+  margin: 50px;
   height: 400px;
   background: rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(0, 0, 0, 0.6);
   border-radius: 30px;
-}
-
-
-/*Styles for popup view*/
-
-.popup-view {
-  z-index: 2;
-  background: rgba(255, 255, 255, 0.5);
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.5s;
-}
-
-.popup-view.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.popup-card {
-  position: relative;
-  display: flex;
-  width: 800px;
-  height: 500px;
-  margin: 20px;
-}
-
-.popup-card .product-img {
-  z-index: 2;
-  background: #1D212B;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 45%;
-  height: 90%;
-  transform: translateY(25px);
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.popup-card .product-img img {
-  z-index: 2;
-  position: relative;
-  width: 450px;
-  left: -50px;
-}
-
-.popup-card .info {
-  z-index: 2;
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  width: 55%;
-  height: 100%;
-  box-sizing: border-box;
-  padding: 40px;
-  border-radius: 10px;
-  color: crimson;
-}
-
-.popup-card .close-btn {
-  color: #555;
-  z-index: 3;
-  position: absolute;
-  right: 0;
-  font-size: 20px;
-  margin: 20px;
-  cursor: pointer;
-}
-
-.popup-card .info h2 {
-  font-size: 40px;
-  line-height: 20px;
-  margin: 10px;
-}
-
-.popup-card .info h2 span {
-  font-size: 15px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.popup-card .info p {
-  font-size: 15px;
-  margin: 10px;
-}
-
-.popup-card .info .price {
-  font-size: 45px;
-  font-weight: 300;
-  margin: 10px;
-}
-
-.popup-card .info .add-cart-btn {
-  color: #fff;
-  background: black;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin: 10px auto;
-  padding: 10px 50px;
-  border-radius: 20px;
-}
-
-.popup-card .info .add-wish {
-  color: black;
-  font-size: 16px;
-  text-align: center;
-  font-weight: 600;
-  text-transform: uppercase;
 }
 
 
@@ -581,7 +518,15 @@ input:not(:placeholder-shown)~.reset {
 }
 
 
-
+@media(max-width: 1232px){
+  .registerSection{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .twoCarImage{
+    width: 90vw;
+  }
+}
 
 /*Responsive*/
 @media (max-width: 830px) {
@@ -644,21 +589,22 @@ input:not(:placeholder-shown)~.reset {
   header h2{
     margin-bottom: 40vh;
   }
-  header img {
-    width: 380px;
-    height: 150px;
-    margin-top: 43vh;
-  }
 
-  .bg-slider-thumbs {
-    bottom: -81vh;
-  }
 
   .swiper-slide .text-content {
     margin: 50px;
-    margin-bottom: 200px;
+    top: 10%;
   }
-  .container {
+  .registerSection{
     grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+@media (max-height: 450px) {
+  header{
+    height: 90vh;
+  }
+  header h2 {
+    margin-bottom: -18vh;
   }
 }
