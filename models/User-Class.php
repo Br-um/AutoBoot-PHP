@@ -1,4 +1,5 @@
 <?php
+include('./Mysqlcon.php');
 class Users{
     private $name;
     private $email;
@@ -68,16 +69,21 @@ class Users{
         $patternEmail = "/^[a-z0-9\_\-]+@[a-z0-9]+.(com|br|com.br)$/i";
         $patternPassword = "/^[a-z0-9]{5,35}$/i";
         $patternPhone = "/^[0-9]{5,25}$/";
+        $sqlUser = "INSERT INTO usuario (nome, email, telefone, senha) VALUES ('$this->name', '$this->email', '$this->phone', '$this->password')";
 
-        if(preg_match($patternName, $this->name) && preg_match($patternEmail, $this->email) && preg_match($patternPassword, $this->password) && preg_match($patternPhone, $this->phone)):
-            echo "Validos";
-        else:
+        if(preg_match($patternName, $this->name) && preg_match($patternEmail, $this->email) && preg_match($patternPassword, $this->password) && preg_match($patternPhone, $this->phone)){
+            if(mysqli_query($conn, $sqlUser)){
+
+            }else{
+
+            } 
+        }
+        else{
             echo "Inválidos<br><br>
             Nome: {$this->name}<br>
             Email: {$this->email}<br>
             Senha: {$this->password}<br>
             Telefone: {$this->phone}";
-        endif;
         }
+    }
 }
-?>

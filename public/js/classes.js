@@ -57,11 +57,24 @@ class MenuHamburguer {
 
 
 class SmoothComponent {
-    constructor(cardReg, cardTwo) {
+    constructor(cardReg, cardTwo, carCard) {
         this.cardReg = document.querySelectorAll(cardReg)[0]
         this.cardTwo = document.querySelectorAll(cardTwo)
+        this.carCard = document.querySelectorAll(carCard)
     }
-
+    clientRect(){
+        this.carCard.forEach(e => {
+            e.getBoundingClientRect()
+        })
+        return this
+    }
+    smoothCarCard(){
+        if ( document.body.scrollTop == this.clientRect() || document.documentElement.scrollTop == this.clientRect()){
+            this.carCard.forEach(e => {
+                e.style.opacity = 0
+            })
+        }
+    }
     smoothCardReg() {
         if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
             this.cardReg.style.opacity = "1"
@@ -86,6 +99,7 @@ class SmoothComponent {
     onscroll() {
         window.onscroll = () => {
             this.smoothCardReg()
+            this.smoothCarCard()
         }
         return this
     }

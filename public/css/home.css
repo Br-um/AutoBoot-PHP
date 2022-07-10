@@ -41,9 +41,10 @@ header img {
   background: #fff;
   border-radius: 20px;
   padding: 5px;
+  transition: 0.4s;
 }
 header img:hover {
-  background: #fd3737;
+  background: crimson;
   cursor: pointer;
 }
 

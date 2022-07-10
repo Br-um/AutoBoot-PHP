@@ -68,7 +68,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide dark-layer">
-                    <img src="public/img/cr2.jpg" alt="">
+                    <img src="public/img/cr9.jpg" alt="">
                     <div class="text-content">
                         <h2 class="title">Como Surgiu?</h2>
                         <p>Surgiu com intuito de facilitar a compra de carros esportivos sem muita demanda presencial.</p>
@@ -96,7 +96,7 @@
         <div class="bg-slider-thumbs">
             <div class="swiper-wrapper thumbs-container">
                 <img src="public/img/cr7.jpg" class="swiper-slide" alt="">
-                <img src="public/img/cr2.jpg" class="swiper-slide" alt="">
+                <img src="public/img/cr9.jpg" class="swiper-slide" alt="">
                 <img src="public/img/cr8.jpg" class="swiper-slide" alt="">
                 <img src="public/img/cr6.jpg" class="swiper-slide" alt="">
             </div>
@@ -140,8 +140,8 @@
 
         </div>
     </section>
-    <script src="public/js/classes.js"></script>
-    <script src="public/js/init.js"></script>
+    <script src="public/js/classes.js" defer></script>
+    <script src="public/js/init.js" defer></script>
 </body>
 
 </html>

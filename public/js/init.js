@@ -43,7 +43,8 @@ menuHamburguer.init()
 // Smooth Component init
 const smoothComponent = new SmoothComponent(
   ".twoCarImage",
-  ".cardSecTwo"
+  ".cardSecTwo",
+  ".carCard"
 )
 smoothComponent.init()
 
