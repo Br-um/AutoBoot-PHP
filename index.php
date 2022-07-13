@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,6 +46,9 @@
                         </button>
                     </form>
                 </li>
+                <?php 
+                    if($_SESSION)
+                ?>
             </ul>
         </nav>
         <h2 class="titleAutoBoot">AutoBoot</h2>
@@ -51,7 +57,7 @@
     <section class="registerSection">
         <div class="twoCarImage"></div>
         <div class="cardsTwo">
-            <div class="card1 cardSecTwo"><i class="fa-solid fa-user icon"></i>LOGIN</div>
+            <a href="views/loginpage.php"><div class="card1 cardSecTwo"><i class="fa-solid fa-user icon"></i>LOGIN</div></a>
             <a href="views/registerpage.php"><div class="card2 cardSecTwo"><i class="fa-solid fa-address-card icon"></i>REGISTRO</div></a>
             <div class="card3 cardSecTwo"><i class="fa-solid fa-lines-leaning icon"></i>CATEGORIAS</div>
             <div class="card4 cardSecTwo"><i class="fa-solid fa-wrench icon"></i>OFICINA</div>

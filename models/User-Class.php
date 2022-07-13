@@ -76,6 +76,9 @@ class Users{
             Email: {$this->email}<br>
             Senha: {$this->password}<br>
             Telefone: {$this->phone}";
+
+        else: 
+            return true;
         endif;
     }
     public function init(){
