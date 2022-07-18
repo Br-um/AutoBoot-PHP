@@ -18,31 +18,31 @@
             <form id="msform" action="../controller/user-controller.php" method="POST">
                 <!-- progressbar -->
                 <ul id="progressbar">
-                    <li class="active">Account Setup</li>
-                    <li>Social Profiles</li>
-                    <li>Personal Details</li>
+                    <li class="active">Conta</li>
+                    <li>Perfil</li>
+                    <li>Detalhes da conta</li>
                 </ul>
                 <!-- fieldsets -->
                 <fieldset>
-                    <h2 class="fs-title">Create your account</h2>
-                    <h3 class="fs-subtitle">This is step 1</h3>
+                    <h2 class="fs-title">Crie sua consta</h2>
+                    <h3 class="fs-subtitle">Primeiro passo</h3>
                     <input type="text" name="email" placeholder="Email" />
-                    <input type="password" name="password" placeholder="Password" />
-                    <input type="button" name="next" class="next action-button" value="Next" />
+                    <input type="password" name="password" placeholder="Senha" />
+                    <input type="button" name="next" class="next action-button" value="Próximo" />
                 </fieldset>
                 <fieldset>
                     <h2 class="fs-title">Siga para o próximo passo</h2>
                     <h3 class="fs-subtitle">Precisamos de mais algumas informações suas.</h3>
-                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                    <input type="button" name="next" class="next action-button" value="Next" />
+                    <input type="button" name="previous" class="previous action-button" value="Anterior" />
+                    <input type="button" name="next" class="next action-button" value="Próximo" />
                 </fieldset>
                 <fieldset>
-                    <h2 class="fs-title">Personal Details</h2>
-                    <h3 class="fs-subtitle">We will never sell it</h3>
-                    <input type="text" name="name" placeholder="First Name" />
-                    <input type="text" name="phone" placeholder="Phone" />
-                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                    <input type="submit" value="Submit"/>
+                    <h2 class="fs-title">informações pessoais</h2>
+                    <h3 class="fs-subtitle">Suas informações nunca serão vazadas</h3>
+                    <input type="text" name="name" placeholder="Primeiro Nome" />
+                    <input type="text" name="phone" placeholder="Telefone" />
+                    <input type="button" name="previous" class="previous action-button" value="Anterior" />
+                    <input type="submit" value="Concluir"/>
                 </fieldset>
             </form>
         </section>

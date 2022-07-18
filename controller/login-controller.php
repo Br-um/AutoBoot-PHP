@@ -6,8 +6,9 @@
 
     $selLog = "SELECT email FROM usuario WHERE email= '$email'";
     $query = mysqli_query($conn, $selLog);
-    if(!$query):
-        echo "Eli_query($conn, $sqlQuery)rro ao efetuar login";
+    $total = mysqli_num_rows($query);
+    if(!$total):
+        echo "<br><br>Email ou senha inválido";
     else:
         if(!isset($_SESSION["$email"])){
             header('Location: ../index.php');

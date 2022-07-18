@@ -20,8 +20,8 @@
                     <h2 class="fs-title">Faça seu login</h2>
                     <h3 class="fs-subtitle">execute seu login para ter acesso ao conteúdo</h3>
                     <input type="text" name="email" placeholder="Email" />
-                    <input type="password" name="password" placeholder="Password" />
-                    <input type="submit" name="submit" value="submit" />
+                    <input type="password" name="password" placeholder="Senha" />
+                    <input type="submit" name="submit" value="Login" />
                 </fieldset>
             </form>
         </section>
