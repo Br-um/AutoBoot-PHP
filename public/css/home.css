@@ -34,7 +34,7 @@ nav {
   transition: 2s;
 }
 
-header img {
+.car {
   width: 70px;
   margin-top: 10px;
   height: 60px;
@@ -43,9 +43,13 @@ header img {
   padding: 5px;
   transition: 0.4s;
 }
-header img:hover {
+.car:hover {
   background: crimson;
   cursor: pointer;
+}
+.user{
+  width: 50px;
+  height: 50px;
 }
 
 header h2 {
@@ -101,9 +105,23 @@ li:nth-child(4) {
 li:nth-child(4):hover {
   background-color: rgba(0, 0, 0, 0);
 }
+li:nth-child(5) {
+  background-color: none;
+  border-radius: 20px;
+  font-size: 15px;
+  width: 60px;
+  height: auto;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+}
+
+li:nth-child(5):hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 
 li:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
   border-radius: 50px;
 }
@@ -460,8 +478,8 @@ input:not(:placeholder-shown)~.reset {
   width: 300px;
   margin: 50px;
   height: 400px;
-  background: rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 30px;
 }
 

@@ -1,5 +1,6 @@
-<?php 
+<?php
 session_start();
+include './models/mysqlcon.php'
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,9 +20,11 @@ session_start();
 </head>
 
 <body>
+    <script src="public/js/classes.js" defer></script>
+    <script src="public/js/init.js" defer></script>
     <header>
         <nav>
-            <img src="public/img/favicon.png" alt="">
+            <img class="car" src="public/img/favicon.png" alt="">
             <div class="menuHamburguer">
                 <span class="line1 item"></span>
                 <span class="line2 item"></span>
@@ -29,8 +32,8 @@ session_start();
             </div>
             <ul class="list">
                 <li><a href="./index.php"><i class="fa-solid fa-house icon"></i>Home</li></a>
-                <li><a href="http://"><i class="fa-solid fa-car icon"></i>Estoque</li></a>
-                <li><a href="http://"><i class="fa-solid fa-people-group icon"></i>Nós</li></a>
+                <li><a href="#estoque"><i class="fa-solid fa-car icon"></i>Estoque</li></a>
+                <li><a href="#qms"><i class="fa-solid fa-people-group icon"></i>Nós</li></a>
                 <li>
                     <form class="form">
                         <button>
@@ -46,9 +49,16 @@ session_start();
                         </button>
                     </form>
                 </li>
-                <?php 
-                    if($_SESSION)
-                ?>
+                <li>
+                    <?php
+                    if (!isset($_GET['user'])) :
+                        echo "<a href='views/loginpage.php'>Login</a>";
+                    else :
+                        $user = $_GET['user'];
+                        echo "<img class='user' src='./public/img/user.png'/>".$user;
+                    endif;
+                    ?>
+                </li>
             </ul>
         </nav>
         <h2 class="titleAutoBoot">AutoBoot</h2>
@@ -57,14 +67,18 @@ session_start();
     <section class="registerSection">
         <div class="twoCarImage"></div>
         <div class="cardsTwo">
-            <a href="views/loginpage.php"><div class="card1 cardSecTwo"><i class="fa-solid fa-user icon"></i>LOGIN</div></a>
-            <a href="views/registerpage.php"><div class="card2 cardSecTwo"><i class="fa-solid fa-address-card icon"></i>REGISTRO</div></a>
+            <a href="views/loginpage.php">
+                <div class="card1 cardSecTwo"><i class="fa-solid fa-user icon"></i>LOGIN</div>
+            </a>
+            <a href="views/registerpage.php">
+                <div class="card2 cardSecTwo"><i class="fa-solid fa-address-card icon"></i>REGISTRO</div>
+            </a>
             <div class="card3 cardSecTwo"><i class="fa-solid fa-lines-leaning icon"></i>CATEGORIAS</div>
             <div class="card4 cardSecTwo"><i class="fa-solid fa-wrench icon"></i>OFICINA</div>
         </div>
     </section>
     <!-- Swiper -->
-    <section class="sliderCar">
+    <section class="sliderCar" id="qms">
         <div class="swiper bg-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -108,46 +122,14 @@ session_start();
             </div>
         </div>
     </section>
-    <section class="container">
-        <div class="carCard">
-            <div></div>
-        </div>
-        <div class="carCard">
-
-        </div>
-        <div class="carCard">
-
-        </div>
-        <div class="carCard">
-
-        </div>
-        <div class="carCard">
-
-        </div>
-        <div class="carCard">
-
-        </div>
-        <div class="carCard">
-
-        </div>
-        <div class="carCard">
-
-        </div>
-        <div class="carCard">
-
-        </div>
-        <div class="carCard">
-
-        </div>
-        <div class="carCard">
-
-        </div>
-        <div class="carCard">
-
-        </div>
+    <section class="container" id="estoque">
+        <?php
+            $car = "SELECT * FROM carros";
+            $qry = mysqli_query($conn, $car);
+            $row = mysqli_fetch_assoc($qry);
+            
+        ?>
     </section>
-    <script src="public/js/classes.js" defer></script>
-    <script src="public/js/init.js" defer></script>
 </body>
 
 </html>
