@@ -1,6 +1,6 @@
 <?php
 
-    $conn = mysqli_connect("localhost:3307", "root", "", "autoboot");
+    $conn = mysqli_connect("localhost:3306", "root", "","autoboot");
 
     if(!$conn){
         echo "Erro ao conectar no banco de dados";

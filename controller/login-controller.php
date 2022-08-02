@@ -3,18 +3,14 @@
     require('../models/mysqlcon.php');
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $selLog = "SELECT email, nome FROM usuario WHERE email= '$email'";
+    $selLog = "SELECT email, nome FROM usuario WHERE email= '$email' AND senha = '$password'";
     $query = mysqli_query($conn, $selLog);
+    $result = mysqli_fetch_assoc($query);
     $total = mysqli_num_rows($query);
-    if(!$total):
+    if($total != 1):
         echo "<br><br>Email ou senha inválido";
     else:
-        if(!isset($_SESSION["$email"])){
-            $row = mysqli_fetch_assoc($query);
-            $info = $row['nome'];
-            header('Location: ../index.php?user='.$info);
-        }else{
-            echo "Erro ao armazenar sessão";
-        }
+        $_SESSION['usuario'] = serialize($result);
+        header('Location: ../index.php');
     endif;
 ?>

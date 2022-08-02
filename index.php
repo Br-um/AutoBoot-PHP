@@ -1,11 +1,13 @@
 <?php
 session_start();
-include './models/mysqlcon.php'
+$usuario = unserialize($_SESSION['usuario']);
+include './models/mysqlcon.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,10 +53,10 @@ include './models/mysqlcon.php'
                 </li>
                 <li>
                     <?php
-                    if (!isset($_GET['user'])) :
+                    if (!isset($_SESSION['usuario'])) :
                         echo "<a href='views/loginpage.php'>Login</a>";
                     else :
-                        $user = $_GET['user'];
+                        $user = $usuario['nome'];
                         echo "<img class='user' src='./public/img/user.png'/>".$user;
                     endif;
                     ?>
@@ -122,14 +124,5 @@ include './models/mysqlcon.php'
             </div>
         </div>
     </section>
-    <section class="container" id="estoque">
-        <?php
-            $car = "SELECT * FROM carros";
-            $qry = mysqli_query($conn, $car);
-            $row = mysqli_fetch_assoc($qry);
-            
-        ?>
-    </section>
 </body>
-
 </html>
