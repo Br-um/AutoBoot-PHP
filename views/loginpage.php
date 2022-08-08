@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/57a78e002b.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="public/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../public/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../public/css/logreg.css">
     <title>AutoBoot-Register</title>
 </head>
@@ -18,6 +18,11 @@
             <form id="msform" action="../controller/login-controller.php" method="POST">
                 <fieldset>
                     <h2 class="fs-title">Faça seu login</h2>
+                    <?php
+                    if (isset($_GET['err'])) {
+                        echo "<h3 style='color: red;'>{$_GET['err']}</h3>";
+                    }
+                    ?>
                     <h3 class="fs-subtitle">execute seu login para ter acesso ao conteúdo</h3>
                     <input type="text" name="email" placeholder="Email" />
                     <input type="password" name="password" placeholder="Senha" />

@@ -57,14 +57,13 @@ include './models/mysqlcon.php';
                         echo "<a href='views/loginpage.php'>Login</a>";
                     else :
                         $user = $usuario['nome'];
-                        echo "<img class='user' src='./public/img/user.png'/>".$user;
+                        echo "<a href='./controller/logout.php'><img class='user' src='./public/img/user.png'/></a>".$user;
                     endif;
                     ?>
                 </li>
             </ul>
         </nav>
-        <h2 class="titleAutoBoot">AutoBoot</h2>
-        <div></div>
+        <img class="logo" src="./public/img/AutoBoot.png" alt="LogoAutoBoot"/>
     </header>
     <section class="registerSection">
         <div class="twoCarImage"></div>

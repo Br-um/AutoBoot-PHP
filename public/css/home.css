@@ -13,7 +13,7 @@ body {
 
 header {
   display: flex;
-  background-image: url('../img/bk.jpg');
+  background-image: url('../img/bk.png');
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -43,35 +43,23 @@ nav {
   padding: 5px;
   transition: 0.4s;
 }
+
 .car:hover {
   background: crimson;
   cursor: pointer;
 }
-.user{
+
+.user {
   width: 50px;
   height: 50px;
 }
 
-header h2 {
-  font-family: fontFerrari;
-  font-style: italic;
-  color: linear-gradient(to left, red, crimson);
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  opacity: 0;
-  transition-delay: 0.2s;
-  transition: 1.4s;
-  margin-left: 300px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  font-size: clamp(1em, 1.30em + 15vw, 16em);
-  margin-bottom: 1vh;
+.logo {
   position: absolute;
-  text-shadow: 1px 2px 2px #000;
+  width: 430px;
+  height: 230px;
+  left: calc(50% - 230px);
+  top: 20%;
 }
 
 .menuHamburguer {
@@ -105,6 +93,7 @@ li:nth-child(4) {
 li:nth-child(4):hover {
   background-color: rgba(0, 0, 0, 0);
 }
+
 li:nth-child(5) {
   background-color: none;
   border-radius: 20px;
@@ -127,14 +116,15 @@ li:hover {
 }
 
 
-.registerSection{
+.registerSection {
   height: auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
 
 }
-.twoCarImage{
+
+.twoCarImage {
   background-image: url('../img/cr5.jpg');
   background-size: cover;
   border-radius: 30px;
@@ -149,7 +139,7 @@ li:hover {
   height: 450px;
 }
 
-.cardsTwo{
+.cardsTwo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,7 +147,8 @@ li:hover {
   height: auto;
   grid-template-columns: 1fr 1fr;
 }
-.cardSecTwo{
+
+.cardSecTwo {
   width: 350px;
   height: 230px;
   margin: 10px;
@@ -173,19 +164,23 @@ li:hover {
   justify-content: center;
   align-items: center;
 }
-.card1:hover{
+
+.card1:hover {
   background: rgba(64, 0, 255, 0.8);
   cursor: pointer;
 }
-.card2:hover{
+
+.card2:hover {
   background: rgba(242, 255, 0, 0.8);
   cursor: pointer;
 }
-.card3:hover{
+
+.card3:hover {
   background: rgba(26, 255, 0, 0.8);
   cursor: pointer;
 }
-.card4:hover{
+
+.card4:hover {
   background: rgba(255, 0, 0, 0.8);
   cursor: pointer;
 }
@@ -537,12 +532,13 @@ input:not(:placeholder-shown)~.reset {
 }
 
 
-@media(max-width: 1232px){
-  .registerSection{
+@media(max-width: 1232px) {
+  .registerSection {
     grid-template-columns: 1fr;
     justify-items: center;
   }
-  .twoCarImage{
+
+  .twoCarImage {
     width: 90vw;
   }
 }
@@ -602,28 +598,31 @@ input:not(:placeholder-shown)~.reset {
   nav {
     height: 80px;
   }
-  header{
+
+  header {
     height: 60vh;
   }
-  header h2{
-    margin-bottom: 40vh;
-  }
 
+  .logo {
+    width: 330px;
+    height: 230px;
+    left: calc(50% - 165px);
+    top: 5vh;
+  }
 
   .swiper-slide .text-content {
     margin: 50px;
     top: 10%;
   }
-  .registerSection{
+
+  .registerSection {
     grid-template-columns: 1fr;
     justify-items: center;
   }
 }
+
 @media (max-height: 450px) {
-  header{
+  header {
     height: 90vh;
-  }
-  header h2 {
-    margin-bottom: -18vh;
   }
 }

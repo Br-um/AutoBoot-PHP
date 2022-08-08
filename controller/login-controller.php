@@ -7,8 +7,10 @@
     $query = mysqli_query($conn, $selLog);
     $result = mysqli_fetch_assoc($query);
     $total = mysqli_num_rows($query);
+
+    $err = "Email ou Senha errados";
     if($total != 1):
-        echo "<br><br>Email ou senha inválido";
+        header('Location: ../views/loginpage.php?err='.$err);
     else:
         $_SESSION['usuario'] = serialize($result);
         header('Location: ../index.php');

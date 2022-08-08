@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/57a78e002b.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="public/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../public/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../public/css/logreg.css">
     <title>AutoBoot-Register</title>
 </head>
@@ -25,6 +25,11 @@
                 <!-- fieldsets -->
                 <fieldset>
                     <h2 class="fs-title">Crie sua consta</h2>
+                    <?php
+                    if (isset($_GET['err'])) {
+                        echo "<h4 style='color: red;'>{$_GET['err']}</h4>";
+                    }
+                    ?>
                     <h3 class="fs-subtitle">Primeiro passo</h3>
                     <input type="text" name="email" placeholder="Email" />
                     <input type="password" name="password" placeholder="Senha" />
@@ -42,7 +47,7 @@
                     <input type="text" name="name" placeholder="Primeiro Nome" />
                     <input type="text" name="phone" placeholder="Telefone" />
                     <input type="button" name="previous" class="previous action-button" value="Anterior" />
-                    <input type="submit" value="Concluir"/>
+                    <input type="submit" value="Concluir" />
                 </fieldset>
             </form>
         </section>
